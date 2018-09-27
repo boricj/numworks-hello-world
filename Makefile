@@ -1,5 +1,5 @@
-snapshots += Helloworld::App::Snapshot
-snapshot_headers += apps/hello_world/app.h
+apps += Helloworld::App
+app_headers += apps/hello_world/app.h
 
 app_objs += $(addprefix apps/hello_world/,\
   app.o\
