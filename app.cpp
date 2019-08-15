@@ -23,7 +23,7 @@ App::Snapshot::Snapshot()
 }
 
 App * App::Snapshot::unpack(Container * container) {
-  return new App(container, this);
+  return new App(this);
 }
 
 App::Descriptor * App::Snapshot::descriptor() {
@@ -34,8 +34,8 @@ App::Descriptor * App::Snapshot::descriptor() {
 void App::Snapshot::reset() {
 }
 
-App::App(Container * container, Snapshot * snapshot) :
-  ::App(container, snapshot, &m_helloController),
+App::App(Snapshot * snapshot) :
+  ::App(snapshot, &m_helloController),
   m_helloController(this)
 {
 }

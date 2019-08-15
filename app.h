@@ -22,7 +22,7 @@ public:
     Descriptor * descriptor() override;
   };
 private:
-  App(Container * container, Snapshot * snapshot);
+  App(Snapshot * snapshot);
   HelloController m_helloController;
 };
 

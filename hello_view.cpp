@@ -6,7 +6,7 @@ namespace Helloworld {
 
 HelloView::HelloView() :
   View(),
-  m_bufferTextView(KDText::FontSize::Large, 0.5, 0.5, KDColorBlack),
+  m_bufferTextView(KDFont::LargeFont, 0.5, 0.5, KDColorBlack),
   m_color(3),
   m_kdcolor(Palette::GreyWhite)
 {
